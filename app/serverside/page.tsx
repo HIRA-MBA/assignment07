@@ -19,7 +19,7 @@ const Page = async () => {
     {parsedResponse.map((book, index) => (
       <div
         key={index}
-        className="bg-gray-200 p-4 rounded shadow"
+        className="bg-gray-400 p-4 rounded-2xl shadow-inner text-black"
       
       >
         <p><strong>Book ID:</strong> {book.id}</p>

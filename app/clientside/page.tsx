@@ -37,9 +37,9 @@ const ClientPage = () => {
   return (
     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 m-2">
       {data.map((product, index) => (
-        <div key={index} className="bg-gray-200 p-4 rounded shadow space-y-3 font-semibold text-sm" >
+        <div key={index} className="bg-gray-200 p-4 rounded shadow-md space-y-3 text-black font-semibold text-sm" >
           <p>Product Id:{product.id}</p>
-          <Image src={product.image} alt={product.title} width={200} height={200}/>
+          <Image src={product.image} alt={product.title} width={400} height={200}/>
           <h2>Product name:{product.title}</h2>
           <p>Price ($):{product.price}</p>
           <p>Description:{product.description}</p>
